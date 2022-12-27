@@ -2,8 +2,7 @@ import React from 'react'
 
 function SingleAddress({ r }) {
   return (
-    <div className="container">
-      <div class="card w-25 my-3">
+      <div class="card w-25 my-2 mx-2">
         <div class="card-body">
           <h5 class="card-title">{r.payload_id}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{r.customers}</h6>
@@ -27,7 +26,6 @@ function SingleAddress({ r }) {
           </a>
         </div>
       </div>
-    </div>
   )
 }
 

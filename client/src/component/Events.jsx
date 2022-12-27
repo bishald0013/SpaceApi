@@ -2,11 +2,12 @@ import "./event.css"
 import { Link } from 'react-router-dom'
 
 function Events({ t }) {
+
   return (
-    <div className='my-5 d-flex event_container'>
-      <div className="card w-25">
+    <>
+      <div className="card w-25 my-2 mx-2">
         <div className="card-body">
-          <h5 className="card-title">{t.title}</h5>
+          <h5 className="card-title ts-6">{t.title}</h5>
           <h6 className="card-subtitle mb-2 text-muted">{t.event_date_utc}</h6>
           <p className="card-text">
             {t.flight_number}
@@ -19,7 +20,7 @@ function Events({ t }) {
           </a>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
